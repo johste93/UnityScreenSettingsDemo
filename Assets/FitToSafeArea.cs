@@ -17,6 +17,6 @@ public class FitToSafeArea : MonoBehaviour
     {
         Rect safeArea = Screen.safeArea;
         rectTransform.anchoredPosition = safeArea.position;
-        rectTransform.sizeDelta = safeArea.size;
+        rectTransform.sizeDelta = safeArea.size - safeArea.position;
     }
 }
