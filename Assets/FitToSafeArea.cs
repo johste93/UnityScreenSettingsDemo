@@ -9,7 +9,7 @@ public class FitToSafeArea : MonoBehaviour
     private void Awake()
     {
         rectTransform = (RectTransform) transform;
-        rectTransform.anchorMin = rectTransform.anchorMax = rectTransform.pivot = Vector2.up;
+        rectTransform.anchorMin = rectTransform.anchorMax = rectTransform.pivot = Vector2.zero;
 
     }
     
@@ -17,6 +17,6 @@ public class FitToSafeArea : MonoBehaviour
     {
         Rect safeArea = Screen.safeArea;
         rectTransform.anchoredPosition = safeArea.position;
-        rectTransform.sizeDelta = safeArea.size - safeArea.position;
+        rectTransform.sizeDelta = safeArea.size;
     }
 }
