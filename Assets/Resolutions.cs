@@ -110,8 +110,8 @@ public class Resolutions : MonoBehaviour
         UnityEngineDeviceScreenWidthHeightAwake.text = $"UnityEngine.Device.Screen.width/height/refreshRate: {UnityEngine.Device.Screen.width}x{UnityEngine.Device.Screen.height} ({UnityEngine.Screen.currentResolution.refreshRate})";
         UnityEngineScreenCurrentResolutionWidthHeightAwake.text = $"UnityEngine.Screen.currentResolution.width/height: {UnityEngine.Screen.currentResolution.width}x{UnityEngine.Screen.currentResolution.height}";
         UnityEngineDisplayMainSystemWidthHeightAwake.text = $"UnityEngine.Display.main.systemWidth/systemHeight: {UnityEngine.Display.main.systemWidth}x{UnityEngine.Display.main.systemHeight}";
-        UnityEngineDisplayRenderingWidthHeightAwake.text = $"{UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
-        UnityEngineScreenResolutionsAwake.text = string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
+        UnityEngineDisplayRenderingWidthHeightAwake.text = $"UnityEngine.Display.main.renderingWidth/renderingHeight: {UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
+        UnityEngineScreenResolutionsAwake.text = "UnityEngine.Screen.resolutions: " + string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
         UnityEngineScreenSafeAreaAwake.text = $"UnityEngine.Screen.safeArea: {UnityEngine.Screen.safeArea.ToString()}";
     }
     
@@ -125,8 +125,8 @@ public class Resolutions : MonoBehaviour
         UnityEngineDeviceScreenWidthHeightStart.text = $"UnityEngine.Device.Screen.width/height/refreshRate: {UnityEngine.Device.Screen.width}x{UnityEngine.Device.Screen.height} ({UnityEngine.Screen.currentResolution.refreshRate})";
         UnityEngineScreenCurrentResolutionWidthHeightStart.text = $"UnityEngine.Screen.currentResolution.width/height: {UnityEngine.Screen.currentResolution.width}x{UnityEngine.Screen.currentResolution.height}";
         UnityEngineDisplayMainSystemWidthHeightStart.text = $"UnityEngine.Display.main.systemWidth/systemHeight: {UnityEngine.Display.main.systemWidth}x{UnityEngine.Display.main.systemHeight}";
-        UnityEngineDisplayRenderingWidthHeightStart.text = $"{UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
-        UnityEngineScreenResolutionsStart.text = string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
+        UnityEngineDisplayRenderingWidthHeightStart.text = $"UnityEngine.Display.main.renderingWidth/renderingHeight: {UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
+        UnityEngineScreenResolutionsStart.text = "UnityEngine.Screen.resolutions: " +  string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
         UnityEngineScreenSafeAreaStart.text = $"UnityEngine.Screen.safeArea: {UnityEngine.Screen.safeArea.ToString()}";
     }
     
@@ -140,8 +140,8 @@ public class Resolutions : MonoBehaviour
         UnityEngineDeviceScreenWidthHeightOnEnable.text = $"UnityEngine.Device.Screen.width/height/refreshRate: {UnityEngine.Device.Screen.width}x{UnityEngine.Device.Screen.height} ({UnityEngine.Screen.currentResolution.refreshRate})";
         UnityEngineScreenCurrentResolutionWidthHeightOnEnable.text = $"UnityEngine.Screen.currentResolution.width/height: {UnityEngine.Screen.currentResolution.width}x{UnityEngine.Screen.currentResolution.height}";
         UnityEngineDisplayMainSystemWidthHeightOnEnable.text = $"UnityEngine.Display.main.systemWidth/systemHeight: {UnityEngine.Display.main.systemWidth}x{UnityEngine.Display.main.systemHeight}";
-        UnityEngineDisplayRenderingWidthHeightOnEnable.text = $"{UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
-        UnityEngineScreenResolutionsOnEnable.text = string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
+        UnityEngineDisplayRenderingWidthHeightOnEnable.text = $"UnityEngine.Display.main.renderingWidth/renderingHeight: {UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
+        UnityEngineScreenResolutionsOnEnable.text = "UnityEngine.Screen.resolutions: " +  string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
         UnityEngineScreenSafeAreaOnEnable.text = $"UnityEngine.Screen.safeArea: {UnityEngine.Screen.safeArea.ToString()}";
     }
     
@@ -155,8 +155,8 @@ public class Resolutions : MonoBehaviour
         UnityEngineDeviceScreenWidthHeight.text = $"UnityEngine.Device.Screen.width/height/refreshRate: {UnityEngine.Device.Screen.width}x{UnityEngine.Device.Screen.height} ({UnityEngine.Screen.currentResolution.refreshRate})";
         UnityEngineScreenCurrentResolutionWidthHeight.text = $"UnityEngine.Screen.currentResolution.width/height: {UnityEngine.Screen.currentResolution.width}x{UnityEngine.Screen.currentResolution.height}";
         UnityEngineDisplayMainSystemWidthHeight.text = $"UnityEngine.Display.main.systemWidth/systemHeight: {UnityEngine.Display.main.systemWidth}x{UnityEngine.Display.main.systemHeight}";
-        UnityEngineDisplayRenderingWidthHeight.text = $"{UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
-        UnityEngineScreenResolutions.text = string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
+        UnityEngineDisplayRenderingWidthHeight.text = $"UnityEngine.Display.main.renderingWidth/renderingHeight: {UnityEngine.Display.main.renderingWidth}x{UnityEngine.Display.main.renderingHeight}";
+        UnityEngineScreenResolutions.text = "UnityEngine.Screen.resolutions: " + string.Join(",", UnityEngine.Screen.resolutions.ToList().Select(x => $"{x.width}x{x.height} ({x.refreshRate})").ToList());
         UnityEngineScreenSafeArea.text = $"UnityEngine.Screen.safeArea: {UnityEngine.Screen.safeArea.ToString()}";
 
         for (int i = 0; i < UnityEventGroups.Length; i++)
